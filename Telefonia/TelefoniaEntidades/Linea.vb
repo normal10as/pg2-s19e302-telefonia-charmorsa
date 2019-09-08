@@ -1,4 +1,12 @@
 ﻿Public Class Linea
+    Public Sub New()
+        Me.New(0, 0)
+    End Sub
+    Public Sub New(CodigoArea As UShort, Numero As UInteger)
+        Me.CodigoArea = CodigoArea
+        Me.Numero = Numero
+    End Sub
+
     Private _codigoArea As UShort
     Public Property CodigoArea As UShort
         Get

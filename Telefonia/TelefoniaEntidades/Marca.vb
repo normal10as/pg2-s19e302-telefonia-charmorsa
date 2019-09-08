@@ -1,4 +1,12 @@
 ﻿Public Class Marca
+    Public Sub New()
+        Me.New("")
+    End Sub
+
+    Public Sub New(Nombre As String)
+        Me.Nombre = Nombre
+    End Sub
+
     Private _nombre As String
     Public Property Nombre As String
         Get

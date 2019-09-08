@@ -1,21 +1,27 @@
 ﻿Public Class Empresa
+    Public Sub New()
+        Me.New("", "")
+    End Sub
+
+    Public Sub New(RazonSocial As String, Cuit As String)
+        Me.RazonSocial = RazonSocial
+        Me.Cuit = Cuit
+    End Sub
+
     Private _RazonSocial As String
     Public Property RazonSocial As String
         Get
             Return _RazonSocial
-
         End Get
         Set(value As String)
             _RazonSocial = value
         End Set
     End Property
 
-
     Private _cuit As String
     Public Property Cuit As String
         Get
             Return _cuit
-
         End Get
         Set(value As String)
             _cuit = value
