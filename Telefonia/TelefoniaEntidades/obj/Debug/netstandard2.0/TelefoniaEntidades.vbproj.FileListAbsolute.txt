@@ -1,0 +1,9 @@
+E:\facultad\SEGUNDO\PROGRAMACION 2\trabajos\OBJETOS\pg2-s19e302-telefonia-charmorsa\Telefonia\TelefoniaEntidades\bin\Debug\netstandard2.0\TelefoniaEntidades.deps.json
+E:\facultad\SEGUNDO\PROGRAMACION 2\trabajos\OBJETOS\pg2-s19e302-telefonia-charmorsa\Telefonia\TelefoniaEntidades\bin\Debug\netstandard2.0\TelefoniaEntidades.dll
+E:\facultad\SEGUNDO\PROGRAMACION 2\trabajos\OBJETOS\pg2-s19e302-telefonia-charmorsa\Telefonia\TelefoniaEntidades\bin\Debug\netstandard2.0\TelefoniaEntidades.pdb
+E:\facultad\SEGUNDO\PROGRAMACION 2\trabajos\OBJETOS\pg2-s19e302-telefonia-charmorsa\Telefonia\TelefoniaEntidades\obj\Debug\netstandard2.0\TelefoniaEntidades.vbprojAssemblyReference.cache
+E:\facultad\SEGUNDO\PROGRAMACION 2\trabajos\OBJETOS\pg2-s19e302-telefonia-charmorsa\Telefonia\TelefoniaEntidades\obj\Debug\netstandard2.0\TelefoniaEntidades.vbproj.CoreCompileInputs.cache
+E:\facultad\SEGUNDO\PROGRAMACION 2\trabajos\OBJETOS\pg2-s19e302-telefonia-charmorsa\Telefonia\TelefoniaEntidades\obj\Debug\netstandard2.0\TelefoniaEntidades.AssemblyInfoInputs.cache
+E:\facultad\SEGUNDO\PROGRAMACION 2\trabajos\OBJETOS\pg2-s19e302-telefonia-charmorsa\Telefonia\TelefoniaEntidades\obj\Debug\netstandard2.0\TelefoniaEntidades.AssemblyInfo.vb
+E:\facultad\SEGUNDO\PROGRAMACION 2\trabajos\OBJETOS\pg2-s19e302-telefonia-charmorsa\Telefonia\TelefoniaEntidades\obj\Debug\netstandard2.0\TelefoniaEntidades.dll
+E:\facultad\SEGUNDO\PROGRAMACION 2\trabajos\OBJETOS\pg2-s19e302-telefonia-charmorsa\Telefonia\TelefoniaEntidades\obj\Debug\netstandard2.0\TelefoniaEntidades.pdb

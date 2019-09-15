@@ -1,20 +1,19 @@
 ﻿Public Class Empresa
-    Public Sub New()
-        Me.New("", "")
-    End Sub
-
+    Inherits Cliente
     Public Sub New(RazonSocial As String, Cuit As String)
         Me.RazonSocial = RazonSocial
         Me.Cuit = Cuit
     End Sub
-
-    Private _RazonSocial As String
+    Private _razonSocial As String
     Public Property RazonSocial As String
         Get
-            Return _RazonSocial
+            Return _razonSocial
         End Get
         Set(value As String)
-            _RazonSocial = value
+            If value.Length <= 80 And value.Length > 0 Then
+                _razonSocial = value
+            End If
+
         End Set
     End Property
 
@@ -24,7 +23,13 @@
             Return _cuit
         End Get
         Set(value As String)
-            _cuit = value
+            If value.Length <= 13 And value.Length > 0 Then
+                _cuit = value
+            End If
         End Set
     End Property
+
+    Public Overrides Function toString() As String
+        Return RazonSocial & " " & Cuenta
+    End Function
 End Class

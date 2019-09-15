@@ -1,26 +1,29 @@
 ﻿Public Class Equipo
-    Public Sub New()
-        Me.New("")
-    End Sub
-
-    Public Sub New(Serie As String)
-        Me.Serie = Serie
-    End Sub
-
-    Private _serie As String
-    Public Property Serie As String
+    Private _serieEquipo As String
+    Public Property SerieEquipo As String
         Get
-            Return _serie
+            Return _serieEquipo
         End Get
         Set(value As String)
-            _serie = value
+            If value.Length <= 15 And value.Length > 0 Then
+                _serieEquipo = value
+            End If
+
         End Set
     End Property
 
-    Private _fechaVenta As Date
     Public ReadOnly Property FechaVenta As Date
         Get
-            Return _fechaVenta
+            Return vender()
         End Get
     End Property
+
+    Public Function vender() As Date
+        Return Date.Now
+    End Function
+
+    Public Overrides Function toString() As String
+        Return SerieEquipo
+    End Function
+
 End Class

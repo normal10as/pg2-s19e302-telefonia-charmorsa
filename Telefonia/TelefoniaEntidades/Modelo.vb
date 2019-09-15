@@ -1,18 +1,21 @@
 ﻿Public Class Modelo
-    Public Sub New()
-        Me.New("")
+
+    Public Sub New(nombreModelo As String)
+        Me.NombreModelo = nombreModelo
     End Sub
-    Public Sub New(Nombre As String)
-        Me.Nombre = Nombre
-    End Sub
-    Private _nombre As String
-    Public Property Nombre As String
+    Private _nombreModelo As String
+    Public Property NombreModelo As String
         Get
-            Return _nombre
+            Return _nombreModelo
         End Get
         Set(value As String)
-            _nombre = value
+            If value.Length <= 50 And value.Length > 0 Then
+                _nombreModelo = value
+            End If
         End Set
     End Property
 
+    Public Overrides Function toString() As String
+        Return NombreModelo
+    End Function
 End Class
