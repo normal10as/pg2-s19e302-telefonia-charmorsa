@@ -1,9 +1,10 @@
 ﻿Imports TelefoniaEntidades
 Module EquipoTest
     Public Sub equipo()
-        Dim equipo1 As New Equipo()
-        ' equipo1.SerieEquipo("1")
+        Dim equipo1 As New Equipos(New Modelo("one", New Marca("motorola")), "12345")
         Console.WriteLine("Fecha de venta:" & equipo1.FechaVenta())
-        Console.WriteLine("ToString: " & equipo1.toString)
+        equipo1.vender(Date.Now)
+        Console.WriteLine("ToString: " & equipo1.SerieEquipo)
+        Console.WriteLine("ToString: " & equipo1.Modelo.toString)
     End Sub
 End Module

@@ -1,5 +1,4 @@
 ﻿Public Class Marca
-
     Public Sub New(nombreMarca As String)
         Me.NombreMarca = nombreMarca
     End Sub

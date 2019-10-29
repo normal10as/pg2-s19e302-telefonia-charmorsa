@@ -1,7 +1,10 @@
 ﻿Imports TelefoniaEntidades
 Module LineaTest
     Public Sub linea()
-        Dim linea1 As New Linea(3764, 804323)
+        Dim marca1 As New Marca("samsung")
+        Dim modelo1 As New Modelo("s8+", marca1)
+        Dim equipo1 As New Equipos(modelo1, "5646974")
+        Dim linea1 As New Linea(3764, 804323, equipo1)
         Console.WriteLine("Codigo area + numero: {0}{1}", linea1.CodigoArea, linea1.Numero)
         Console.WriteLine("Suspendo la linea")
         linea1.suspender()

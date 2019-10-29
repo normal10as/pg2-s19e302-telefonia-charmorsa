@@ -1,9 +1,20 @@
-﻿Public Class Linea
-    Public Sub New(codigoArea As UShort, Numero As UInteger)
+﻿Imports TelefoniaEntidades
+Public Class Linea
+    Public Sub New(codigoArea As UShort, Numero As UInteger, equipo As Equipos)
         Me.CodigoArea = codigoArea
         Me.Numero = Numero
+        Me.Equipo = equipo
     End Sub
     Private _codigoArea As UShort
+    Private _equipos As Equipos
+    Public Property Equipo As Equipos
+        Get
+            Return _equipos
+        End Get
+        Set(value As Equipos)
+            _equipos = value
+        End Set
+    End Property
     Public Property CodigoArea As UShort
         Get
             Return _codigoArea
@@ -30,26 +41,27 @@
 
     Public ReadOnly Property Estado As String
         Get
-            If LineaEstado = 0 Then
-                Return "supendido"
+            If LineaEstadoActivo Then
+                Return "activo"
+            Else
+                Return "suspendido"
             End If
-            Return "activo"
         End Get
     End Property
-
-    Private LineaEstado As Byte = 1
+    Private LineaEstadoActivo As Boolean = True
     Public Sub suspender()
-        LineaEstado = 0
+        LineaEstadoActivo = False
     End Sub
-
     Public Sub reactivar()
-        LineaEstado = 1
+        LineaEstadoActivo = True
     End Sub
 
     Public Overrides Function toString() As String
-        If LineaEstado = 0 Then
-            Return CodigoArea & " " & Numero & " suspendida"
+        Dim resultado As String
+        resultado = CodigoArea & " " & Numero
+        If Not LineaEstadoActivo Then
+            resultado += " suspendida"
         End If
-        Return CodigoArea & " " & Numero
+        Return resultado
     End Function
 End Class
